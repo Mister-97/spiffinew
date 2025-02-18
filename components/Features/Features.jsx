@@ -22,15 +22,16 @@ const Features = () => {
         <div>
           <div>
             <h3>
-              It Must Be Magic
+              Stay Fresh, Stay Spiffi
               <img className="kissing" src="/homepage/kissing.png" />
             </h3>
             <p>
-              Magic Fresh Cleaning is a cleaning service that serves the
-              Chicagoland area. Our main goal is customer satisfaction, which
-              means that our clients' satisfaction is our top priority. Because
-              each of our Cleaners possesses a magical touch, each cleaning will
-              have your home feeling brand new again.
+             Spiffi is a high-quality cleaning service bringing a spiffy 
+              touch to homes and businesses across Chicagoland. We don’t 
+              just clean—we elevate your space, leaving it fresh, spotless, 
+              and effortlessly stylish. Our team takes pride in attention to 
+              detail, ensuring that every home and office we service looks as 
+              pristine and polished as it should.
             </p>
             <a style={{}} href="/book-now">
               Try Us Out
