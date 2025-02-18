@@ -16,24 +16,30 @@ const Features = () => {
     }
   }, [router]);
 
-  return (
-    <section id="features">
-      <TryOut>
+ return (
+  <section id="features">
+    <TryOut>
+      <div>
         <div>
-          <div>
-            <h3>
-              Stay Fresh, Stay Spiffi
-              <img className="kissing" src="/homepage/kissing.png" />
-            </h3>
-            <p>
-             Spiffi is a high-quality cleaning service bringing a spiffy 
-              touch to homes and businesses across Chicagoland. We don’t 
-              just clean—we elevate your space, leaving it fresh, spotless, 
-              and effortlessly stylish. Our team takes pride in attention to 
-              detail, ensuring that every home and office we service looks as 
-              pristine and polished as it should.
-            </p>
-            <a style={{}} href="/book-now">
+          <h3>
+            Stay Fresh, Stay Spiffi
+            <img className="kissing" src="/homepage/kissing.png" alt="Kissing emoji" />
+          </h3>
+          <p>
+            Spiffi is a high-quality cleaning service bringing a spiffy 
+            touch to homes and businesses across Chicagoland. We don’t 
+            just clean—we elevate your space, leaving it fresh, spotless, 
+            and effortlessly stylish. Our team takes pride in attention to 
+            detail, ensuring that every home and office we service looks as 
+            pristine and polished as it should.
+          </p>
+          <a href="/book-now">Book Now</a>
+        </div>
+      </div>
+    </TryOut>
+  </section>
+);
+
               Try Us Out
             </a>
           </div>
