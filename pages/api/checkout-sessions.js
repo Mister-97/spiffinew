@@ -11,7 +11,7 @@ export default async function handler(req, res) {
               currency: "usd",
               product_data: {
                 name: "Discount Raffle",
-                description: "Discount Raffle For Magic Fresh",
+                description: "Discount Raffle For Spiffi Cleaning",
               },
               unit_amount: 500,
             },
