@@ -9,117 +9,69 @@ const Features = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (Object.keys(router.query).includes("about")) {
+    if (router.query.about) {
       scroller.scrollTo(1000);
-    } else if (Object.keys(router.query).includes("process")) {
+    } else if (router.query.process) {
       scroller.scrollTo(1500);
     }
-  }, [router]);
+  }, [router.query]);
 
- return (
-  <section id="features">
-    <TryOut>
-      <div>
+  return (
+    <section id="features">
+      <TryOut>
         <div>
-          <h3>
-            Stay Fresh, Stay Spiffi
-            <img className="kissing" src="/homepage/kissing.png" alt="Kissing emoji" />
-          </h3>
-          <p>
-            Spiffi is a high-quality cleaning service bringing a spiffy 
-            touch to homes and businesses across Chicagoland. We don’t 
-            just clean—we elevate your space, leaving it fresh, spotless, 
-            and effortlessly stylish. Our team takes pride in attention to 
-            detail, ensuring that every home and office we service looks as 
-            pristine and polished as it should.
-          </p>
-          <a href="/book-now">Book Now</a>
-        </div>
-      </div>
-    </TryOut>
-  </section>
-);
-
-              Try Us Out
-            </a>
+          <div>
+            <h3>
+              Stay Fresh, Stay Spiffi
+              <img className="kissing" src="/homepage/kissing.png" alt="Kissing emoji" />
+            </h3>
+            <p>
+              Spiffi is a high-quality cleaning service bringing a spiffy
+              touch to homes and businesses across Chicagoland. We don’t
+              just clean—we elevate your space, leaving it fresh, spotless,
+              and effortlessly stylish. Our team takes pride in attention to
+              detail, ensuring that every home and office we service looks as
+              pristine and polished as it should.
+            </p>
+            <a href="/book-now">Try Us Out</a>
           </div>
         </div>
-        <img src="/homepage/magic.png" />
+        <img src="/homepage/magic.png" alt="Magic cleaning" />
       </TryOut>
+      
       <Feature img="/homepage/proven-process.jpeg">
         <div id="about">
           <h2>Our Proven Process</h2>
           <ul>
-            <li>
-              <strong>Clean and Sanitize –</strong> In addition to our regular
-              cleaning procedures our crew will additionally sanitize light
-              switches, doorknobs, telephones, bathroom surfaces, and other
-              locations that are frequently handled.
-            </li>
-
-            <li>
-              <strong>Professional Staff –</strong> Our residential housekeepers
-              have received considerable training to thoroughly clean every room
-              in your house according to your individual demands, providing the
-              high-quality clean you want.
-            </li>
-            <li>
-              <strong>24-Hour Warranty –</strong> If there is ever a time that
-              you are unhappy with any part of our latest services, just phone
-              us within 24 hours, and we'll work with you to find a solution.
-            </li>
-            <li>
-              <strong>No Contracts –</strong> One benefit of choosing Magic
-              Fresh is that contracts are never an option.
-            </li>
+            <li><strong>Clean and Sanitize –</strong> We sanitize frequently touched surfaces.</li>
+            <li><strong>Professional Staff –</strong> Trained residential housekeepers ensure a high-quality clean.</li>
+            <li><strong>24-Hour Warranty –</strong> If you're unhappy, call us within 24 hours, and we’ll fix it.</li>
+            <li><strong>No Contracts –</strong> One benefit of choosing Spiffi is that contracts are never an option.</li>
           </ul>
-          <a
-            style={{
-              textAlign: "left",
-              paddingLeft: "70px",
-            }}
-            href="/services"
-          >
-            Our Cleaning Process
-          </a>
+          <a href="/services">Our Cleaning Process</a>
         </div>
       </Feature>
+      
       <Feature reverse img="/homepage/brand-new.png">
         <div style={{ textAlign: "right" }}>
           <h2>With a little magic, make your home feel brand new again</h2>
-
           <p>
-            Your home is more than just a home, it’s a place where memories are
-            made and moments are treasured. The simple things in life should not
-            be complicated, even if life can be. Magic Fresh strives to remove
-            stress from your day so you can live your life on your terms. With a
-            little magic, you can make your home feel brand new again.
+            Your home is more than just a home; it’s where memories are made and moments are treasured.
+            Spiffi strives to remove stress from your day so you can enjoy life. With a little magic,
+            your home will feel brand new again.
           </p>
-          <a
-            style={{
-              textAlign: "right",
-              justifyContent: "right",
-              paddingRight: "5rem",
-            }}
-            href="/services"
-          >
-            Our Services
-          </a>
+          <a href="/services">Our Services</a>
         </div>
       </Feature>
+      
       <Feature img="/homepage/guarantee.png">
         <div>
-          <h2>Our Worry Free Guarantee</h2>
+          <h2>Our Worry-Free Guarantee</h2>
           <p>
-            When you entrust your space to the Magic Fresh® team, you can relax
-            knowing that your home is in good hands. You have the right to be
-            confident that you will receive consistently flawless results from
-            friendly, dependable professionals. Magic Fresh® offers the
-            assistance you require. Our Worry-Free Guarantee reflects our
-            willingness to go above and beyond to ensure your home is always a
-            sanctuary. If you are dissatisfied with our recent visit for any
-            reason, please let us know within 24 hours and we will return to
-            make things right.
+            When you entrust your space to the Spiffi® team, you can relax
+            knowing that your home is in good hands. We ensure consistently
+            flawless results from friendly, dependable professionals. If you are
+            dissatisfied with our service, contact us within 24 hours, and we will make it right.
           </p>
         </div>
       </Feature>
@@ -162,12 +114,7 @@ const TryOut = styled.div`
       p {
         text-align: center;
         font-family: "Arial";
-        font-style: normal;
         font-weight: 400;
-        /* or 75px */
-
-        text-align: center;
-
         color: #7c7c7c;
       }
       position: absolute;
@@ -181,25 +128,6 @@ const TryOut = styled.div`
         left: 40%;
         top: 10%;
         padding: 12px;
-        h3 {
-          font-size: 11px;
-        }
-        p {
-          font-size: 9px;
-        }
-      }
-      @media (max-width: 500px) {
-        width: 50vw;
-        left: 15%;
-        top: 5%;
-        padding: 8px;
-        h3 {
-          font-size: 10px;
-        }
-        p,
-        a {
-          font-size: 8px;
-        }
       }
     }
   }
