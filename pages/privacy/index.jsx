@@ -14,13 +14,13 @@ const Privacy = () => {
       </h2>
       <Point>
         <p>
-          Magic Fresh operates the https://www.magicfresh.cleaning website,
+          Spiffi operates the https://www.spiffi.cleaning website,
           which provides the SERVICE.
         </p>
         <p>
           This page is used to inform website visitors regarding our policies
           with the collection, use, and disclosure of Personal Information if
-          anyone decided to use our Service, the Magic Fresh website.
+          anyone decided to use our Service, the Spiffi website.
         </p>
         <p>
           If you choose to use our Service, then you agree to the collection and
@@ -33,7 +33,7 @@ const Privacy = () => {
         <p>
           The terms used in this Privacy Policy have the same meanings as in our
           Terms and Conditions, which is accessible at
-          https://www.magicfresh.cleaning, unless otherwise defined in this
+          https://www.spiffi.cleaning, unless otherwise defined in this
           Privacy Policy.
         </p>
       </Point>
@@ -51,21 +51,7 @@ const Privacy = () => {
           This Log Data may include information such as your computer’s Internet
           Protocol ("IP") address, browser version, pages of our Service that
           you visit, the time and date of your visit, the time spent on those
-          pages, and other statistics. Cookies
-        </p>
-
-        <p>
-          Cookies are files with small amount of data that is commonly used an
-          anonymous unique identifier. These are sent to your browser from the
-          website that you visit and are stored on your computer’s hard drive.
-        </p>
-
-        <p>
-          Our website uses these "cookies" to collection information and to
-          improve our Service. You have the option to either accept or refuse
-          these cookies, and know when a cookie is being sent to your computer.
-          If you choose to refuse our cookies, you may not be able to use some
-          portions of our Service.
+          pages, and other statistics.
         </p>
       </Point>
 
@@ -111,9 +97,11 @@ const Privacy = () => {
           us with personal information, we immediately delete this from our
           servers. If you are a parent or guardian and you are aware that your
           child has provided us with personal information, please contact us so
-          that we will be able to do necessary actions.
+          that we will be able to take necessary actions.
         </p>
-        <p>Changes to This Privacy Policy</p>
+      </Point>
+
+      <Point title="Changes to This Privacy Policy">
         <p>
           We may update our Privacy Policy from time to time. Thus, we advise
           you to review this page periodically for any changes. We will notify
