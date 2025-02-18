@@ -10,7 +10,7 @@ const Discounts = () => {
         <Flex>
           <FlexCenter>
             {/* <h2 style={{ color: "red" }}>$5</h2> */}
-            <H2>FREE Spring Cleaning Raffle</H2>
+            <H2>FREE Cleaning Raffle</H2>
           </FlexCenter>
           <p style={{ color: "#636363", textAlign: "center" }}>
             Get a full house deep cleaning for $5 by entering into our seasonal
@@ -18,7 +18,7 @@ const Discounts = () => {
             raffle. Multiple entries are eligible to increase chances of
             winning!
           </p>
-          <p style={{ color: "#636363" }}>Raffle ends November 2nd 2023 </p>
+          <p style={{ color: "#636363" }}>Raffle ends November 2nd 2025 </p>
           <h6>Information</h6>
 
           <ContactForm />
